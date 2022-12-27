@@ -1,0 +1,141 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:100,300&text=JakeBeazley);*/
+
+
+:root {
+	--main-bg-colour: #0b3c5e url('noise.png');
+	--outp-bg-colour: #ACE4AA url('noise.png');
+	--text-colour-light: #ccc;
+	--text-colour-dark: black;
+	--bignum-ele-size: 8rem;
+	--bignum-text-size: 3rem;
+	--test: #ACE4AA;
+}
+
+body {
+	background: var(--main-bg-colour);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 98vh;
+	width: 98vw;
+	color: #ccc;
+	font-family: 'Oswald','sans-serif';
+	align-self: center;
+}
+
+.container {
+	background: rgba(0,0,0,0.4);
+	min-width: 40em;
+	max-width: 90vw;
+	min-height: 40em;
+	border-radius: 1em;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+@media screen and (max-width: 40rem) {
+	.container {
+		min-width: min-content;
+		padding: 0 1rem;
+		overflow-x: hidden;
+	}
+}
+
+h2 {
+	margin: 0.5em auto;
+}
+
+.input {
+	display: flex;
+	align-content: center;
+}
+
+input, .output {
+	width: 8rem;
+	margin-right: 1rem;
+	border: none;
+	font-family: 'Oswald','sans-serif';
+	font-size: 3rem;
+	text-align: center;
+}
+
+input {
+	border-radius: 0.4rem;
+	background: var(--main-bg-colour);
+}
+
+.output {
+	height: 8rem;
+	border-radius: 50%;
+	background: var(--outp-bg-colour);
+	color: black;
+	display: grid;
+}
+
+output {align-self: center;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.in, .out {
+	display: grid;
+	grid-auto-flow: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.choices {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 1em;
+}
+
+.fromUnit, .fromType, .toUnit, .toType {
+	display: grid;
+	grid-template-columns: min-content min-content;
+	height: min-content;
+	border: 1px solid #ccc;
+	border-radius: 0.4em;
+	padding: 0.3em;
+	align-self: center;
+}
+
+button.selected {
+	background: var(--main-bg-colour);
+	border-radius: 0.3em;
+	color: var(--test);
+}
+
+.choices > p {
+	text-align: center;
+	text-transform: uppercase;
+	align-self: center;
+}
+
+.container > p {
+	text-align: center;
+	text-transform: uppercase;
+	align-self: center;
+	font-size: 5em;
+	margin: 0;
+}
+
+button {
+	margin: 0;
+	padding: 0.3em 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	background: inherit;
+	color: inherit;
+	font-family: inherit;
+	border: none;
+	cursor:pointer;
+}

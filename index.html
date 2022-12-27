@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yeast Converter</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	<script type="text/javascript" src="calc.js" defer></script>
+	<h2>🍞 Yeast Calculator 🥖</h2>
+	<div class="container">
+		<div class="in">
+			<div class="input">
+				<input class="amount" name="amount" type="number" min="0" value="6.9" onkeyup="updater(this)"></input>
+			</div>
+			<div class="choices">
+				<div class="fromUnit">
+					<button onclick="updater(this)">grams</button>
+					<button onclick="updater(this)" class="selected">tsp</button>
+					<button onclick="updater(this)">tbsp</button>
+					<button onclick="updater(this)">cups</button>
+				</div>
+				<p>of</p>
+				<div class="fromType">
+					<button class="selected">instant</button>
+					<button>fresh</button>
+					<button>active dry</button>
+				</div>
+			</div>
+		</div>
+		<p>=</p>
+		<div class="out">
+			<div class="output">
+				<output>5.358</output>
+			</div>
+			<div class="choices">
+				<div class="toUnit">
+					<button class="selected">grams</button>
+					<button>tsp</button>
+					<button>tbsp</button>
+					<button>cups</button>
+				</div>
+				<p>of</p>
+				<div class="toType">
+					<button>instant</button>
+					<button class="selected">fresh</button>
+					<button>active dry</button>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
