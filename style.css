@@ -69,7 +69,7 @@ input {
 	height: 8rem;
 	border-radius: 50%;
 	background: var(--outp-bg-colour);
-	color: black;
+	color: black !important;
 	display: grid;
 }
 
