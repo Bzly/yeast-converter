@@ -1,11 +1,11 @@
 :root {
 	--main-bg-colour: #0b3c5e url('noise.png');
 	--outp-bg-colour: #ACE4AA url('noise.png');
+	--outp-text-colour: #ACE4AA;
 	--text-colour-light: #ccc;
 	--text-colour-dark: black;
 	--bignum-ele-size: 8rem;
 	--bignum-text-size: 3rem;
-	--test: #ACE4AA;
 }
 
 body {
@@ -24,8 +24,8 @@ body {
 	background: rgba(0,0,0,0.4);
 	min-width: 40em;
 	max-width: 90vw;
-	min-height: 40em;
-	border-radius: 1em;
+	min-height: 40rem;
+	border-radius: 1rem;
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -40,7 +40,7 @@ body {
 }
 
 h2 {
-	margin: 0.5em auto;
+	margin: 0.75rem auto;
 }
 
 .input {
@@ -49,11 +49,11 @@ h2 {
 }
 
 input, .output {
-	width: 8rem;
+	width: var(--bignum-ele-size);
 	margin-right: 1rem;
 	border: none;
 	font-family: 'Oswald','sans-serif';
-	font-size: 3rem;
+	font-size: var(--bignum-text-size);
 	text-align: center;
 }
 
@@ -63,7 +63,7 @@ input {
 }
 
 .output {
-	height: 8rem;
+	height: var(--bignum-ele-size);
 	border-radius: 50%;
 	background: var(--outp-bg-colour);
 	color: black !important;
@@ -108,7 +108,7 @@ input[type=number] {
 button.selected {
 	background: var(--main-bg-colour);
 	border-radius: 0.3em;
-	color: var(--test);
+	color: var(--outp-text-colour);
 }
 
 .choices > p {
