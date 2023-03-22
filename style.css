@@ -22,12 +22,11 @@ body {
 
 .container {
 	background: rgba(0,0,0,0.4);
-	min-width: 40em;
+	min-width: 40rem;
 	max-width: 90vw;
 	min-height: 40rem;
 	border-radius: 1rem;
 	display: grid;
-	justify-content: center;
 	align-content: center;
 }
 
@@ -45,7 +44,6 @@ h2 {
 
 .input {
 	display: flex;
-	align-content: center;
 }
 
 input, .output {
@@ -85,14 +83,13 @@ input[type=number] {
 .in, .out {
 	display: grid;
 	grid-auto-flow: column;
-	align-content: center;
 	justify-content: center;
 }
 
 .choices {
 	display: grid;
 	grid-auto-flow: column;
-	grid-gap: 1em;
+	grid-gap: 1rem;
 }
 
 .fromUnit, .fromType, .toUnit, .toType {
@@ -100,19 +97,18 @@ input[type=number] {
 	grid-template-columns: min-content min-content;
 	height: min-content;
 	border: 1px solid #ccc;
-	border-radius: 0.4em;
-	padding: 0.3em;
+	border-radius: 0.4rem;
+	padding: 0.3rem;
 	align-self: center;
 }
 
 button.selected {
 	background: var(--main-bg-colour);
-	border-radius: 0.3em;
+	border-radius: 0.3rem;
 	color: var(--outp-text-colour);
 }
 
 .choices > p {
-	text-align: center;
 	text-transform: uppercase;
 	align-self: center;
 }
@@ -121,14 +117,13 @@ button.selected {
 	text-align: center;
 	text-transform: uppercase;
 	align-self: center;
-	font-size: 5em;
+	font-size: 5rem;
 	margin: 0;
 }
 
 button {
 	margin: 0;
-	padding: 0.3em 0.5em;
-	text-align: center;
+	padding: 0.3rem 0.5rem;
 	text-transform: uppercase;
 	background: inherit;
 	color: inherit;
